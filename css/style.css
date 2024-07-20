@@ -1,0 +1,385 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=wsap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#up{
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    height: 200px;
+    width: 50%;
+    background: linear-gradient(45deg,#f98101,#e6af2f);
+    background-size: 400% 400%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(30px);
+    animation: down 5s infinite;
+}
+
+#down{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 400px;
+    width: 30%;
+    background: linear-gradient(60deg,#d46e01,#e6af2f);
+    background-size: 400% 400%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    filter: blur(30px);
+    animation: up 3s infinite;
+}
+
+
+#left{
+    position: absolute;
+    top:  -30px;
+    left: 0%;
+    height:150px;
+    width: 20%;
+    background-color: #fde57a;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    filter: blur(30px);
+    animation: right 10s infinite; 
+}
+
+#right{
+    position: absolute;
+    top:  -30px;
+    right: 0px;
+    height:280px;
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+    background-color: #fee435;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 80%;
+    filter: blur(30px);
+    animation: left 5s infinite; 
+}
+
+@keyframes down{
+    0%, 100%{
+        top: -80px;
+    }
+
+    70%{
+        top: -10px;
+    }
+}
+
+@keyframes up{
+    0%, 100%{
+        left: -50px;
+        bottom: 0px;
+    }
+
+    70%{
+        left: -10px;
+        bottom: 30px;
+    }
+}
+
+@keyframes right{
+    0%, 100%{
+        left: -50px;
+    }
+
+    70%{
+        left: -10px;
+    }
+}
+
+@keyframes left{
+    0%, 100%{
+        top: -50px;
+       
+    }
+
+    70%{
+        top: 0px;
+      
+    }
+}
+
+nav{
+   
+    position: absolute;
+    width: 90%;
+    left: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+   
+   
+}
+
+
+.logo{
+   margin-right:0px ;
+   
+}
+.logo img{
+    
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+nav ul{
+    margin-left: 0%;
+    margin-right: 0%;
+   
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    color: #54250c;
+    font-weight: 600;
+    margin: 12px;
+   
+}
+nav ul li a{
+    color:#54250c;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    padding-bottom: 12px;
+ 
+}
+
+nav .btn button {
+    margin: 18px 4px;
+    padding: 5px 12px;
+    background-color: #54250c;
+    font-weight: 600;
+    border-radius: 15px;
+    color: rgba(24,24,24,255);
+    border-style: solid;
+    
+}
+
+nav .btn .login{  
+    background-color: #54250c;
+} 
+
+nav .btn .login a{
+    margin: 8px;
+    color: white;
+    font-size: 12px;
+
+    
+} 
+nav .btn .signup{
+    margin: 8px;
+    background-color:transparent;
+    border-style:solid;
+    border-color: #54250c;
+
+    
+} 
+
+ nav .btn .signup a{
+    padding: 12px;
+    color: #54250c;
+    font-size: 12px;
+ }
+
+body{
+    min-height: 100vh;
+    align-items: center;
+    background-color: #f1ad13;
+}
+
+.container{
+    top: 16%;
+    left: 8%;
+    position: absolute;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    height:70vh;
+    margin: auto;
+}
+
+.container .content{
+    align-items: center;
+    margin: 20px;
+    width: 55%;
+   
+  
+}
+
+.container .content h3{
+    font-size: 250%;
+    color: #54250c;
+    font-family: "Lalezar", sans-serif;
+    font-weight: 500;
+}
+
+.container .content h2{
+    font-size: 300%;
+    color:#54250c;
+    font-family: "Lalezar", sans-serif;
+    font-weight: 600;
+}
+
+.container .content p{
+    margin: 20px 0px;
+    color: #54250c;
+    font-size: 100%;
+    font-weight: 500;
+}
+
+.container .content .btn{
+    margin-left:0px;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.container .content .btn button {
+    margin: 18px 4px;
+    padding: 5px 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    border-style: solid;
+   
+}
+
+.container .content .btn button a{
+    margin: 12px;
+    font-size: 12px;
+   
+}
+
+.container .content .btn .demo{
+    
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    
+}
+.container .content .btn .demo img{
+    width: 15px;
+    height: 15px;
+  
+    margin: 5px 0px;
+  
+    
+}
+
+.container .content .btn .demo a{
+    margin: 5px;
+    color:#54250c;
+}
+
+.container .content .btn .getstart{
+    border-color:#54250c;
+    background-color: #54250c;
+      
+}
+
+.container .content .btn .getstart a{
+    margin: 12px;
+    color:white;
+}
+
+.container .content .getstart a {
+    color: white;
+}
+
+
+.container .content .myimage{
+    width: 400px;
+    object-fit: cover;
+    background-color: rgb(225, 225, 235);
+
+}
+
+.container .myimage img{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin-right: 50px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+
+
+@media (max-width:450px) {
+    
+    nav ul{
+        display: none;
+    }
+
+
+    .container{
+        top: 5%;
+        left: 0;
+        right: 0;
+        height: 90%;
+        position: absolute;
+        display: flex;
+        flex-direction: column-reverse;
+        
+        padding: 0;
+      
+        
+    }
+
+    .container .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .container .content h2{
+        font-size: 220%;
+      
+    }
+
+    .container .content h3{
+        font-size: 200%;
+        
+    }
+
+    .container .content p{
+        font-size: 90%;
+        margin:0px;
+    }
+
+ 
+
+    .container .myimage img{
+        margin: 0;
+        width: 100%;
+        height: 52vh;
+       
+    }
+
+    .container .content .btn button a{
+        margin: 10px;
+        font-size: 10px;
+       
+    }
+
+    .btn{
+        float: left;
+    }
+}
